@@ -1,6 +1,7 @@
 ![image](https://github.com/user-attachments/assets/8a729faf-1222-48e3-a8b3-af5daff1d170)
 
-<p align="center">
+<p align="left">
+    
   <!-- Kedro -->
   <a href="https://kedro.readthedocs.io/en/stable/"><img src="https://img.shields.io/badge/docs-kedro-blue.svg" alt="Kedro Documentation"></a>
   
