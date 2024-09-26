@@ -21,59 +21,125 @@
   <a href="https://github.com/pytorch/pytorch"><img src="https://img.shields.io/github/stars/pytorch/pytorch?style=social" alt="PyTorch GitHub Stars"></a>
 </p>
 
+### **README.md for your Project**
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Breast Cancer Detection Using Kedro and Swin Transformer
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Project Overview
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+This project aims to build a pipeline for breast cancer detection using Kedro and Swin Transformer for object detection and classification. The project is structured as a Kedro-based project, with additional components related to Swin Transformer for deep learning tasks.
 
-## Learning Laravel
+### Project Structure:
+- Path: `\breastCancer\python_project\kedro-introduction-tutorial-master`
+- Subproject: `Swin_Transformer_Object_Detection_master` for deep learning-based object detection using the Swin Transformer model.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Setup Instructions
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Step 1: Setting Up the Environment
 
-## Laravel Sponsors
+First, you need to set up the virtual environment (venv) and install all necessary dependencies. Follow the steps below.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Create and Activate Virtual Environment:
 
-### Premium Partners
+```bash
+# Create the virtual environment named venv2
+python -m venv venv2
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+# Activate the virtual environment
+# On Windows:
+venv2\Scripts\activate
+
+# On Linux or MacOS:
+source venv2/bin/activate
+```
+
+### Step 2: Install Kedro and Requirements
+
+Navigate to the main project directory and install the necessary dependencies.
+
+```bash
+cd \breastCancer\python_project\kedro-introduction-tutorial-master
+
+# Install Kedro version 0.16.5 and additional dependencies
+pip install kedro==0.16.5
+pip install kedro[pandas]==0.16.5  # Pandas installed separately due to pip bug
+pip install kedro-viz scipy matplotlib  # Additional requirements
+```
+
+### Step 3: Install Swin Transformer Dependencies
+
+The project utilizes Swin Transformer for object detection. To set up this module, navigate to the `Swin_Transformer_Object_Detection_master` subproject and install the relevant requirements.
+
+```bash
+cd sub_projects\Swin_Transformer_Object_Detection_master
+
+# Install requirements from build.txt, docs.txt, and runtime.txt
+pip install -r requirements\build.txt
+pip install -r requirements\docs.txt
+pip install -r requirements\runtime.txt
+```
+
+Once these steps are completed, you should have all necessary packages and libraries installed.
+
+---
+
+## About the Project
+
+### 1. **Kedro**
+Kedro is used to structure the pipeline for data processing, model training, and evaluation. Kedro helps in creating modular, scalable, and reproducible workflows.
+
+### 2. **Swin Transformer**
+Swin Transformer is a state-of-the-art model for object detection and image classification. It is utilized in this project for detecting cancerous regions from medical images.
+
+### 3. **Project Goals**
+- Create a scalable pipeline for breast cancer detection using deep learning models.
+- Use Swin Transformer to enhance detection accuracy.
+- Structure the workflow using Kedro for efficient data handling and model integration.
+
+---
+
+## Key Features
+
+- **Modular pipeline**: The project is structured using Kedro to provide clear separation of concerns and enhance reproducibility.
+- **Swin Transformer for Detection**: Integration of the Swin Transformer model for accurate object detection and classification of breast cancer images.
+- **Visualization**: Use `kedro-viz` and `matplotlib` for visualizing pipeline components and model results.
+
+---
+
+## Running the Project
+
+After setting up the environment and installing all requirements, you can run the project using the following commands:
+
+1. **Running Kedro pipeline**:
+
+   ```bash
+   kedro run
+   ```
+
+2. **Visualizing the pipeline**:
+
+   ```bash
+   kedro viz
+   ```
+
+---
+
+## Learning Resources
+
+1. [Kedro Documentation](https://kedro.readthedocs.io/en/stable/)
+2. [Swin Transformer GitHub Repo](https://github.com/microsoft/Swin-Transformer)
+
+---
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+If you'd like to contribute to this project, feel free to open a pull request or reach out with any suggestions.
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the MIT License. See the [LICENSE](https://opensource.org/licenses/MIT) file for more details.
+
