@@ -1,11 +1,25 @@
 ![image](https://github.com/user-attachments/assets/8a729faf-1222-48e3-a8b3-af5daff1d170)
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <!-- Kedro -->
+  <a href="https://kedro.readthedocs.io/en/stable/"><img src="https://img.shields.io/badge/docs-kedro-blue.svg" alt="Kedro Documentation"></a>
+  
+  <!-- Laravel -->
+  <a href="https://github.com/laravel/laravel"><img src="https://img.shields.io/github/stars/laravel/laravel?style=social" alt="Laravel GitHub Stars"></a>
+  <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Laravel Total Downloads"></a>
+  
+  <!-- Swin Transformer -->
+  <a href="https://github.com/microsoft/Swin-Transformer"><img src="https://img.shields.io/github/stars/microsoft/Swin-Transformer?style=social" alt="Swin Transformer GitHub Stars"></a>
+  <a href="https://arxiv.org/abs/2103.14030"><img src="https://img.shields.io/badge/paper-arXiv-brightgreen" alt="Swin Transformer arXiv Paper"></a>
+  
+  <!-- CNN (Convolutional Neural Networks) -->
+  <a href="https://cs231n.github.io/convolutional-networks/"><img src="https://img.shields.io/badge/learn-CNN-blue.svg" alt="Learn CNN"></a>
+  
+  <!-- Torch -->
+  <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/docs-pytorch-red.svg" alt="PyTorch Documentation"></a>
+  <a href="https://github.com/pytorch/pytorch"><img src="https://img.shields.io/github/stars/pytorch/pytorch?style=social" alt="PyTorch GitHub Stars"></a>
 </p>
+
 
 ## About Laravel
 
