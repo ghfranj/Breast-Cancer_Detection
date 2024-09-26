@@ -117,13 +117,20 @@ Swin Transformer is a state-of-the-art model for object detection and image clas
 
 After setting up the environment and installing all requirements, you can run the project using the following commands:
 
-1. **Running Kedro pipeline**:
+1. **Running laravel application**:
+
+   ```bash
+   cd breastCancer
+   php artisan serve
+   ```
+
+2. **Running Kedro pipeline**:
 
    ```bash
    kedro run
    ```
 
-2. **Visualizing the pipeline**:
+3. **Visualizing the pipeline**:
 
    ```bash
    kedro viz
