@@ -1,0 +1,68 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://kedro.readthedocs.io/en/stable/04_user_guide/04_data_catalog.html
+
+mammogram_data:
+  type: pillow.ImageDataSet
+  filepath: data/10_Breast_cancer/clean_mammogram.png
+
+raw_mammogram:
+  type: pillow.ImageDataSet
+  filepath: data/10_Breast_cancer/raw_mammogram.png
+
+patient_calc_info:
+  type: json.JSONDataSet
+  filepath: data/12_Patient_calc_info/patient_calc_info.json
+
+patient_mass_info:
+  type: json.JSONDataSet
+  filepath: data/13_Patient_mass_info/patient_mass_info.json
+
+##################################
+# NO NEED TO MODIFY BELOW THIS LINE
+# WHILE FOLLOWING THE TUTORIAL
+
+# Chart Outputs
+
+clean_mammogram:
+  type: pillow.ImageDataSet
+  filepath: data/10_Breast_cancer/clean_mammogram.png
+
+clean_mammogram_without_clh:
+  type: pillow.ImageDataSet
+  filepath: data/11_Breast_Density/clean_mammogram.png
+
+unet_mask:
+  type: pillow.ImageDataSet
+  filepath: data/10_Breast_cancer/unet_mask.png
+
+unet_mask2:
+  type: pillow.ImageDataSet
+  filepath: data/10_Breast_cancer/unet_result.png
+
+
+patient_breast_density:
+  type: json.JSONDataSet
+  filepath: data/15_patient_breast_density/patient_breast_density.json
+
+
+patient_calc_pathology:
+  type: json.JSONDataSet
+  filepath: data/14_Patient_pathology/patient_pathology.json
+
+patient_mass_pathology:
+  type: json.JSONDataSet
+  filepath: data/14_Patient_pathology/patient_pathology.json
+
+swin_cascade_result:
+  type: pillow.ImageDataSet
+  filepath: data/10_Breast_cancer/swin_cascade_result.png
+
+swin_rcnn_result:
+  type: pillow.ImageDataSet
+  filepath: data/10_Breast_cancer/swin_rcnn_result.png
+
+swin_faster_result:
+  type: pillow.ImageDataSet
+  filepath: data/10_Breast_cancer/swin_faster_result.png
